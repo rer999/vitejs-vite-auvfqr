@@ -7,9 +7,12 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+      <Navbar />
         <Routes>
-          <Route Component={Home} path='/' />
+          <Route Component={Home} path="/" />
+          <Route path="*" Component={PageNotFound} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
