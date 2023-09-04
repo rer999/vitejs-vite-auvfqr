@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -11,7 +12,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route Component={Home} path="/"></Route>
-          <Route path="*" Component={PageNotFound} />
+          <Route path="page" Component={PageNotFound} />
         </Routes>
         <Footer />
       </BrowserRouter>

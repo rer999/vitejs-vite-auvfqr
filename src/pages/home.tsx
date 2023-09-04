@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import reactLogo from '../assets/react.svg';
 import viteLogo from '/vite.svg';
+import React from 'react';
+
+import './home.css';
 
 const [count, setCount] = useState(0);
 
-export const Home = () => {
+const Home = () => {
   return (
     <>
       <div>
@@ -30,3 +33,4 @@ export const Home = () => {
     </>
   );
 };
+export default Home;
