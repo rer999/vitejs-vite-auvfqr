@@ -10,8 +10,8 @@ const App = () => {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route Component={<Home />} path="/" />
-          <Route path="*" Component={<PageNotFound />} />
+          <Route Component={Home} path="/"></Route>
+          <Route path="*" Component={PageNotFound} />
         </Routes>
         <Footer />
       </BrowserRouter>
