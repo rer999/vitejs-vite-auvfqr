@@ -1,13 +1,14 @@
 import './App.css';
-import { Router, BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Home } from './pages/exports';
+import { Footer, Navbar } from './sections/exports';
+import { Home, PageNotFound } from './pages/exports';
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route Component={Home} path="/" />
           <Route path="*" Component={PageNotFound} />
