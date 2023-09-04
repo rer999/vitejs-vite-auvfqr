@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -8,14 +7,17 @@ import { Home, PageNotFound } from './pages/exports';
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      {/**<BrowserRouter>
         <Navbar />
         <Routes>
           <Route Component={Home} path="/"></Route>
           <Route path="page" Component={PageNotFound} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </BrowserRouter>**/}
+      <Navbar />
+      <Home />
+      <Footer />
     </>
   );
 };
